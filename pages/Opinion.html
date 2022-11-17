@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Opinion</title>
+</head>
+<body>
+    <header id="padre-header">
+        <img src="../img/fondo3.jpg" alt="Fondo SS" class="imagen-header">
+        <nav>
+            <ul id="navegacion">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="Personajes.html">Personajes</a></li>
+                <li><a href="Figuras.html">Figuras</a></li>
+                <li><a href="Capitulos.html">Capitulos</a></li>
+                <li><a href="Opinion.html">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+    <Section class="formulario">
+        <h1>FORMULARIO</h1>
+
+        <p>Completa el siguiente formulario y dejanos tu opinion</p>
+
+        <form>
+            <fieldset>
+                <legend>Informacion Personal</legend>
+
+                <p>Sexo</p>
+
+                <input type="radio" name="sexo" id="hombre">
+                <label for="hombre">Hombre</label>
+
+                <input type="radio" name="sexo" id="mujer">
+                <label for="mujer">Mujer</label>
+
+                <div>
+                    <label for="pais">País</label>
+                    <input type="text" id="pais" placeholder="País">
+                </div>
+
+                <div>
+                    <label for="signo">Tu signo</label>
+                    <select id="signo">
+                        <option>Aries</option>
+                        <option>Tauro</option>
+                        <option>Geminis</option>
+                        <option>Cancer</option>
+                        <option>Leo</option>
+                        <option>Virgo</option>
+                        <option>Libra</option>
+                        <option>Escorpio</option>
+                        <option>Sagitario</option>
+                        <option>Capricornio</option>
+                        <option>Acuario</option>
+                        <option>Piscis</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="opinion">Dejanos tu opinion de la pagina y no olvides mencionar a tu caballero favorito</label>
+                    <textarea id="opinion" cols="30" rows="6"
+                    maxlength="100"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar">
+
+            </fieldset>
+        </form>
+
+        
+    </Section>
+
+    <footer id="padre-footer">
+        Este sitio fue desarrollado por Francisco Carríon con fines educativos
+    </footer>
+    
+</body>
+</html>
