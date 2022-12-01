@@ -1,0 +1,44 @@
+*   {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62,5%;
+}
+
+
+ul {
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: white
+}
+h1 {
+    font-size: $fuente-grande;
+}
+p {
+    font-size: $fuente-chica;
+}
+
+/* mis 5 headers estan enlazados con el mismo ID*/
+
+#padre-header{
+    grid-area: head;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.imagen-header {
+    max-width: 100%;
+    height: 15rem;
+    margin-right: auto;
+    
+}
+
+body {
+    background-image: $bg-body;
+}

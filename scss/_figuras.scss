@@ -1,0 +1,93 @@
+/* PERSONAJES */
+/* DESKTOP FIRST */
+
+#figuras{
+    display: grid;
+    grid-template-areas:
+    "head head head"
+    "productos productos productos"
+    "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px auto 20px;
+    background-color: blue;
+    
+}
+
+
+
+#navegacion{
+    display: flex;
+    gap: 0.3rem;
+}
+#padre-header li{
+    background-color: black;
+    padding: .3rem 2rem;
+}
+
+@media screen and (max-width: 910px){
+    #padre-header{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 625px){
+    #navegacion{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        text-align: center;
+    }
+}
+
+/* card */
+
+#productos{
+    grid-area: productos;
+    background-color: purple;
+}
+#productos h1,
+#productos p{
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+}
+.padre-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2rem;
+    justify-items: center;
+}
+
+@media screen and (max-width: 970px){
+    .padre-card{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 600px auto 20px;
+        grid-template-areas:
+        "head" "head"
+        "productos" "productos"
+        "footer" "footer";
+    }
+}
+@media screen and (max-width: 767px){
+    .padre-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+    
+
+
+.hijo-card{
+    border: solid 2px gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    
+}
+.imagen-shaka{
+    width: 19rem;
+    max-width: 100%;
+}
+.imagen{
+    max-width: 100%;
+}
