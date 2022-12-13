@@ -1,3 +1,4 @@
+
 /* PERSONAJES */
 /* DESKTOP FIRST */
 
@@ -9,20 +10,9 @@
     "footer footer footer";
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 250px auto 20px;
-    background-color: blue;
     
 }
 
-
-
-#navegacion{
-    display: flex;
-    gap: 0.3rem;
-}
-#padre-header li{
-    background-color: black;
-    padding: .3rem 2rem;
-}
 
 @media screen and (max-width: 910px){
     #padre-header{
@@ -40,8 +30,7 @@
 /* card */
 
 #productos{
-    grid-area: productos;
-    background-color: purple;
+    grid-area: productos;     
 }
 #productos h1,
 #productos p{
@@ -88,6 +77,10 @@
     width: 19rem;
     max-width: 100%;
 }
-.imagen{
-    max-width: 100%;
+
+.boton-figuras{
+    border-radius: 3px;
+    display: inline-block;
+    padding: 10px 15px;
 }
+

@@ -1,0 +1,34 @@
+.seiya {
+    max-width: 100%;
+    width: 25rem;
+}
+.saori {
+    max-width: 100%;
+    width: 25rem;
+    height: 35rem;
+}
+
+#personajes {
+    display: grid;
+    grid-template-areas:
+    "head head head"
+    "personajes personajes personajes"
+    "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+}
+#principales {
+    grid-area: personajes;
+}
+#principales h1,
+#principales p{
+    text-align: center;
+    color: black;
+    font-size: $fuente-grande;
+}
+.card {
+    border: solid 2px gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}

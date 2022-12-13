@@ -32,6 +32,10 @@ p {
     align-items: center;
     margin-bottom: 3rem;
 }
+#padre-header li{
+    background-color: black;
+    padding: .3rem 2rem;
+}
 .imagen-header {
     max-width: 100%;
     height: 15rem;
@@ -41,4 +45,9 @@ p {
 
 body {
     background-image: $bg-body;
+}
+
+#navegacion{
+    display: flex;
+    gap: 0.3rem;
 }

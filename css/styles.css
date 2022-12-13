@@ -34,6 +34,11 @@ p {
   margin-bottom: 3rem;
 }
 
+#padre-header li {
+  background-color: black;
+  padding: 0.3rem 2rem;
+}
+
 .imagen-header {
   max-width: 100%;
   height: 15rem;
@@ -42,6 +47,11 @@ p {
 
 body {
   background-image: linear-gradient(#9932c9, #0000f0);
+}
+
+#navegacion {
+  display: flex;
+  gap: 0.3rem;
 }
 
 /* INDEX */
@@ -57,6 +67,42 @@ body {
   flex-direction: column;
 }
 
+.seiya {
+  max-width: 100%;
+  width: 25rem;
+}
+
+.saori {
+  max-width: 100%;
+  width: 25rem;
+  height: 35rem;
+}
+
+#personajes {
+  display: grid;
+  grid-template-areas: "head head head" "personajes personajes personajes" "footer footer footer";
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#principales {
+  grid-area: personajes;
+}
+
+#principales h1,
+#principales p {
+  text-align: center;
+  color: black;
+  font-size: 3rem;
+}
+
+.card {
+  border: solid 2px gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
 /* PERSONAJES */
 /* DESKTOP FIRST */
 #figuras {
@@ -64,17 +110,6 @@ body {
   grid-template-areas: "head head head" "productos productos productos" "footer footer footer";
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 250px auto 20px;
-  background-color: blue;
-}
-
-#navegacion {
-  display: flex;
-  gap: 0.3rem;
-}
-
-#padre-header li {
-  background-color: black;
-  padding: 0.3rem 2rem;
 }
 
 @media screen and (max-width: 910px) {
@@ -92,7 +127,6 @@ body {
 /* card */
 #productos {
   grid-area: productos;
-  background-color: purple;
 }
 
 #productos h1,
@@ -136,8 +170,10 @@ body {
   max-width: 100%;
 }
 
-.imagen {
-  max-width: 100%;
+.boton-figuras {
+  border-radius: 3px;
+  display: inline-block;
+  padding: 10px 15px;
 }
 
 /* CAPITULOS */
