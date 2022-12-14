@@ -14,18 +14,6 @@
 }
 
 
-@media screen and (max-width: 910px){
-    #padre-header{
-        flex-direction: column;
-    }
-}
-@media screen and (max-width: 625px){
-    #navegacion{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        text-align: center;
-    }
-}
 
 /* card */
 
@@ -75,7 +63,6 @@
 }
 .imagen-shaka{
     width: 19rem;
-    max-width: 100%;
 }
 
 .boton-figuras{

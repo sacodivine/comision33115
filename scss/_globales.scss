@@ -22,7 +22,13 @@ h1 {
 p {
     font-size: $fuente-chica;
 }
-
+img {
+    max-width: 100%;
+}
+img:hover {
+height: 450px;
+width: 450px;
+}
 /* mis 5 headers estan enlazados con el mismo ID*/
 
 #padre-header{
@@ -36,8 +42,15 @@ p {
     background-color: black;
     padding: .3rem 2rem;
 }
+@media screen and (max-width: 910px){
+    #padre-header{
+        flex-direction: column;
+    }
+}
+
+
+
 .imagen-header {
-    max-width: 100%;
     height: 15rem;
     margin-right: auto;
     
@@ -50,4 +63,11 @@ body {
 #navegacion{
     display: flex;
     gap: 0.3rem;
+}
+@media screen and (max-width: 625px){
+    #navegacion{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        text-align: center;
+    }
 }

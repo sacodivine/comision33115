@@ -1,11 +1,9 @@
 .seiya {
-    max-width: 100%;
-    width: 25rem;
+    width: 17rem;
 }
 .saori {
-    max-width: 100%;
-    width: 25rem;
-    height: 35rem;
+    width: 17rem;
+    height: 24rem;
 }
 
 #personajes {
@@ -25,10 +23,38 @@
     color: black;
     font-size: $fuente-grande;
 }
+.papa-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+@media screen and (max-width: 990px) {
+    .papa-card{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "head" "head"
+        "personajes" "personajes"
+        "footer" "footer";
+    }
+    
+}
+@media screen and (max-width: 750px){
+    .papa-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
 .card {
-    border: solid 2px gray;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem;
+}
+.card li{
+    text-align: center;
+    color: black;
+    font-size: $fuente-chica;
+
 }

@@ -25,6 +25,15 @@ p {
   font-size: 1.5rem;
 }
 
+img {
+  max-width: 100%;
+}
+
+img:hover {
+  height: 450px;
+  width: 450px;
+}
+
 /* mis 5 headers estan enlazados con el mismo ID*/
 #padre-header {
   grid-area: head;
@@ -39,8 +48,12 @@ p {
   padding: 0.3rem 2rem;
 }
 
+@media screen and (max-width: 910px) {
+  #padre-header {
+    flex-direction: column;
+  }
+}
 .imagen-header {
-  max-width: 100%;
   height: 15rem;
   margin-right: auto;
 }
@@ -54,9 +67,15 @@ body {
   gap: 0.3rem;
 }
 
+@media screen and (max-width: 625px) {
+  #navegacion {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+  }
+}
 /* INDEX */
 .imagen-inicio {
-  max-width: 100%;
   height: 17rem;
   margin-top: 2rem;
 }
@@ -68,14 +87,12 @@ body {
 }
 
 .seiya {
-  max-width: 100%;
-  width: 25rem;
+  width: 17rem;
 }
 
 .saori {
-  max-width: 100%;
-  width: 25rem;
-  height: 35rem;
+  width: 17rem;
+  height: 24rem;
 }
 
 #personajes {
@@ -95,12 +112,36 @@ body {
   font-size: 3rem;
 }
 
+.papa-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+@media screen and (max-width: 990px) {
+  .papa-card {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "head" "head" "personajes" "personajes" "footer" "footer";
+  }
+}
+@media screen and (max-width: 750px) {
+  .papa-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .card {
-  border: solid 2px gray;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1rem;
+}
+
+.card li {
+  text-align: center;
+  color: black;
+  font-size: 1.5rem;
 }
 
 /* PERSONAJES */
@@ -112,18 +153,6 @@ body {
   grid-template-rows: 250px auto 20px;
 }
 
-@media screen and (max-width: 910px) {
-  #padre-header {
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 625px) {
-  #navegacion {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    text-align: center;
-  }
-}
 /* card */
 #productos {
   grid-area: productos;
@@ -167,7 +196,6 @@ body {
 
 .imagen-shaka {
   width: 19rem;
-  max-width: 100%;
 }
 
 .boton-figuras {
