@@ -1,22 +1,33 @@
 /* CAPITULOS */
 
-
-
+a:hover{
+    color: red;
+}
+#capitulos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 .Cap {
-    padding-left: 2rem;
-    
-    
+    font-size: $fuente-chica;
+    border: solid .2rem;
+    background-color: darkseagreen;
+    margin-bottom: 1rem;
 }
 .Arcos {
-    line-height: 3rem;
-    padding-left: 1rem;
+    font-size: $fuente-chica;
     border: solid .2rem;
-    width: 10rem;
     background-color: gray;
-    text-align: center;
-   
+    margin-top: 1rem;
 }
 h2 {
+    font-size: $fuente-mediana;
     line-height: 5rem;
     padding-left: 2REM;
 }
+.temporadas{
+    width: 28rem;
+    height: 23rem;
+}
+
+    

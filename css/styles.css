@@ -15,10 +15,12 @@ ul {
 a {
   text-decoration: none;
   color: white;
+  font-size: 1.5rem;
 }
 
 h1 {
   font-size: 3rem;
+  padding-bottom: 2rem;
 }
 
 p {
@@ -202,25 +204,47 @@ body {
   border-radius: 3px;
   display: inline-block;
   padding: 10px 15px;
+  margin-top: 1rem;
+}
+
+.boton-figuras:hover {
+  background-color: darkgrey;
 }
 
 /* CAPITULOS */
-.Cap {
-  padding-left: 2rem;
+a:hover {
+  color: red;
 }
 
-.Arcos {
-  line-height: 3rem;
-  padding-left: 1rem;
-  border: solid 0.2rem;
-  width: 10rem;
-  background-color: gray;
+#capitulos {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
+.Cap {
+  font-size: 1.5rem;
+  border: solid 0.2rem;
+  background-color: darkseagreen;
+  margin-bottom: 1rem;
+}
+
+.Arcos {
+  font-size: 1.5rem;
+  border: solid 0.2rem;
+  background-color: gray;
+  margin-top: 1rem;
+}
+
 h2 {
+  font-size: 2rem;
   line-height: 5rem;
   padding-left: 2REM;
+}
+
+.temporadas {
+  width: 28rem;
+  height: 23rem;
 }
 
 .formulario {
