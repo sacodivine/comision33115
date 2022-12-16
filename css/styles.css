@@ -135,13 +135,16 @@ body {
   font-size: 1.5rem;
 }
 
+.protagonistas img:hover {
+  height: 450px;
+  width: 450px;
+}
+
 /* PERSONAJES */
 /* DESKTOP FIRST */
 #figuras {
   display: grid;
   grid-template-areas: "head head head" "productos productos productos" "footer footer footer";
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 250px auto 180px;
 }
 
 /* card */
@@ -149,7 +152,6 @@ body {
   grid-area: productos;
 }
 
-#productos h1,
 #productos p {
   text-align: center;
   font-size: 2rem;
