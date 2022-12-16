@@ -23,7 +23,6 @@
 #productos h1,
 #productos p{
     text-align: center;
-    color: black;
     font-size: 2rem;
 }
 .padre-card{
@@ -59,6 +58,10 @@
     align-items: center;
     padding: 1rem;
     
+}
+.hijo-card img:hover{
+        height: 450px;
+        width: 450px;    
 }
 .imagen-shaka{
     width: 19rem;

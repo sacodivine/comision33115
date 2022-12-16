@@ -20,7 +20,6 @@
 #principales h1,
 #principales p{
     text-align: center;
-    color: black;
     font-size: $fuente-grande;
 }
 .papa-card{
@@ -46,15 +45,14 @@
     }
     
 }
-.card {
+.protagonistas {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-    background-image: $bg-body !important;
+  
 }
-.card li{
+.protagonistas li{
     text-align: center;
-    color: black;
     font-size: $fuente-chica;
 }

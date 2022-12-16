@@ -9,6 +9,10 @@ html {
 
 ul {
     list-style: none;
+    
+}
+li {
+    color: white;
 }
 
 
@@ -25,25 +29,29 @@ h1 {
     font-size: $fuente-grande;
     padding-bottom: 2rem;
     text-align: center;
+    color: rgba(29, 234, 241, 0.644);
 }
 p {
     font-size: $fuente-chica;
+    color: white;
 }
 img {
     max-width: 100%;
 }
-img:hover {
-height: 450px;
-width: 450px;
-}
+
 
 .imagen-header {
     height: 15rem;
     margin-right: auto;
+   
     
 }
 
 body {
-    background-image: $bg-body;
+    background: linear-gradient(rgba(5,7,12, 0.75), rgba(5,7,12, 0.75)),
+     url("/img/fondo-body.jpg");
+     background-position: fixed;
+     background-size: 100%;
+    
 }
 
