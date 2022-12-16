@@ -31,6 +31,12 @@ h1 {
     text-align: center;
     color: rgba(29, 234, 241, 0.644);
 }
+h2 {
+    font-size: $fuente-mediana;
+    line-height: 5rem;
+    padding-left: 2REM;
+    color: rgb(49, 7, 233);
+}
 p {
     font-size: $fuente-chica;
     color: white;

@@ -1,6 +1,22 @@
 /* Todos mis footer tienen el mismo ID */
 #padre-footer{
     grid-area: footer;
-    background-color: yellow;
-    text-align: center;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
 }
+
+.redes a{
+    margin-bottom: 1rem;
+    margin-left: 5rem;
+    margin-right: 10px;
+    display: inline-block;
+    text-decoration: none;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    background-color: #0d2033;
+    text-align: center;
+    
+}
+
