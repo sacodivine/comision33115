@@ -1,11 +1,19 @@
-/* INDEX */
-
-.imagen-inicio{
-    height: 17rem;
-    margin-top: 2rem;
-}
-#padre-index{
+.contenedores-historia{
     display: flex;
-    text-align: center;
     flex-direction: column;
+    align-items: center;
+    gap: 35px;
 }
+
+@media screen and (min-width: 992px){
+    .contenedores-historia{
+        flex-direction: row;
+    }
+    
+}
+
+.contenedores-historia img{
+    height: 350px;
+    
+}
+

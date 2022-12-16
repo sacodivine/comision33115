@@ -18,9 +18,13 @@ a {
     font-size: $fuente-chica;
     
 }
+a:hover{
+    color: red;
+}
 h1 {
     font-size: $fuente-grande;
     padding-bottom: 2rem;
+    text-align: center;
 }
 p {
     font-size: $fuente-chica;
@@ -32,26 +36,6 @@ img:hover {
 height: 450px;
 width: 450px;
 }
-/* mis 5 headers estan enlazados con el mismo ID*/
-
-#padre-header{
-    grid-area: head;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 3rem;
-}
-#padre-header li{
-    background-color: black;
-    padding: .3rem 2rem;
-}
-@media screen and (max-width: 910px){
-    #padre-header{
-        flex-direction: column;
-    }
-}
-
-
 
 .imagen-header {
     height: 15rem;
@@ -63,14 +47,3 @@ body {
     background-image: $bg-body;
 }
 
-#navegacion{
-    display: flex;
-    gap: 0.3rem;
-}
-@media screen and (max-width: 625px){
-    #navegacion{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        text-align: center;
-    }
-}

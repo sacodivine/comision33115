@@ -11,24 +11,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
     <!-- Link Animaciones-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <!-- Iconos footer-->
     <script src="https://kit.fontawesome.com/8871904742.js" crossorigin="anonymous"></script>
     <title>Caballeros del Zodiaco | Figuras</title>
 </head>
 <body id="figuras">
-    <header id="padre-header">
-        <img src="../img/fondo3.jpg" alt="Fondo SS" class="imagen-header">
-        <nav>
-            <ul id="navegacion">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="Personajes.html">Personajes</a></li>
-                <li><a href="Figuras.html">Figuras</a></li>
-                <li><a href="Capitulos.html">Capitulos</a></li>
-                <li><a href="Opinion.html">Formulario</a></li>
+  <header>
+    <nav class="navbar navbar-expand-lg  w-100">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="../img/fondo3.jpg" alt="Fondo SS" class="imagen-header">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Personajes.html">Personajes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="Figuras.html">Figuras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Capitulos.html">Capitulos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Opinion.html">Opinion</a>
+              </li>
             </ul>
-        </nav>
-    </header>
+          </div>
+        </div>
+      </nav>
+</header>
     <main id="productos">
         
         <h1>Nuestras <strong>figuras</strong> mas vendidas</h1>
@@ -72,6 +92,8 @@
 <script>
    new WOW().init();
 </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
 </body>
 </html>
